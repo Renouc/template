@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    background-color: lightblue;
+}
 
 #root {
     height: 100vh;

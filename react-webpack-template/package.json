@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"build": "webpack",
-		"start": "webpack-dev-server --mode development"
+		"start": "webpack-dev-server --config webpack.config.js"
 	},
 	"devDependencies": {
 		"@babel/preset-env": "^7.27.1",
@@ -17,7 +17,9 @@
 		"webpack-dev-server": "^5.2.1"
 	},
 	"dependencies": {
+		"normalize.css": "^8.0.1",
 		"react": "^19.1.0",
-		"react-dom": "^19.1.0"
+		"react-dom": "^19.1.0",
+		"react-router": "^7.5.3"
 	}
 }

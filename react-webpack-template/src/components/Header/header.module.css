@@ -1,5 +1,19 @@
 .header {
-    color: white;
-    padding: 10px;
     background-color: black;
+}
+
+.nav-list {
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-list a {
+    color: #fff;
+}
+
+.nav-list a.active {
+    color: red;
 }

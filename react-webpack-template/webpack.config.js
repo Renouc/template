@@ -22,6 +22,8 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     port: 3000,
+    // 404 重定向到 index.html
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -34,8 +36,12 @@ module.exports = {
             loader: "css-loader",
             options: {
               modules: {
+                // 类名格式
                 localIdentName: "[name]__[local]--[hash:base64:5]",
+                // 不使用命名导出
                 namedExport: false,
+                // 不使用驼峰命名
+                exportLocalsConvention: "asIs",
               },
             },
           },
